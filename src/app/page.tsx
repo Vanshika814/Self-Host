@@ -1,5 +1,6 @@
 import { requireAuth } from "@/lib/auth-utils";
 import { caller } from "@/trpc/server";
+import { LogoutButton } from "./logout";
 const Page = async () => {
   await requireAuth();
 
@@ -11,7 +12,7 @@ const Page = async () => {
     <div>
     {JSON.stringify(data, null,2)}
     </div>
-    
+    <LogoutButton />
   </div>
   );
 };

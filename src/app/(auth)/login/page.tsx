@@ -5,10 +5,8 @@ const Page = async () =>{
     await requireUnauth(); // if logged in it will redirect to the protected server component
 
     return (
-        <div>
             <LoginForm/>
-        </div>
-    );
+    )
 };
 
 export default Page;
